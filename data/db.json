@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "title": "Hello",
+      "type": "C",
+      "body": "<p>Test</p>",
+      "author": "Hello",
+      "created": "2019-09-13",
+      "id": 1
+    },
+    {
+      "title": "Hello",
+      "type": "Js",
+      "body": "<p>Hello</p>",
+      "author": "User 10",
+      "created": "2021-09-13",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "postid": 1,
+      "body": "ADd",
+      "author": "Me",
+      "created": "2021-09-13",
+      "id": 1
+    }
+  ]
+}

@@ -1,13 +1,208 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+a{
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
 }
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 1px solid #d7e5ff;
+}
+.navbar h1 {
+  color: #004AAD;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 10px;
+  color: #004AAD;
+}
+.navbar a:hover {
+  background-color: #d7e5ff;
+}
+.content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.postPreview{
+  position: relative;
+  background-color: #EEFFFE;
+  margin-top: 20px;
+  padding: 15px;
+  border-left: 4px solid #004AAD ;
+  border-radius: 8px 0px 0px 8px;
+  
+}
+
+.postPreview:hover{
+  box-shadow: rgba(0, 0, 0, 0.068) 1.95px 1.95px 2.6px;
+}
+
+.postPreview h2{
+  color: #004AAD;
+  font-size: 1.2em;
+}
+
+.postPreview h3{
+  position: absolute;
+  top:0;
+  right: 0;
+  background-color: #004AAD;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #d7e5ff;
+  /* border-radius: 8px 0px 0px 8px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+
+}
+
+.PostDet p , h2 , .postBody{
+  color: #004AAD;
+}
+
+.PostDet .postBody{
+  margin-top: 30px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  color: #004AAD;
+  font-weight: bold;
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #004AAD;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  background-color: rgb(245, 254, 255);
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #004AAD;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.PostDet .comments{
+  margin-top: 2em;
+
+}
+.comments form{
+  display: flex;
+  flex-direction: column;
+}
+
+.PostDet label{
+
+  color: #004AAD;
+  margin-top: 1em;
+}
+.comments input{
+  margin-top: 1em;
+  height: 30px;
+  width: 200px;
+  background-color: rgb(245, 254, 255);
+  border: 1px solid #ddd;
+}
+.comments textarea{
+  margin-top: 1em;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(245, 254, 255);
+  border: 1px solid #ddd;
+}
+.comments button{
+  background: #004AAD;
+  margin-top: 2em;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100px;
+  margin-left: auto;
+}
+
+.commentlist{
+  margin-top: 20px;
+  padding: 20px;
+  text-align: justify;
+}
+
+.commentPreview{
+  background-color: rgb(225, 252, 255);
+  margin-bottom: 1em;
+  padding: 20px;
+}
+.commentPreview h2{
+  padding: 10px;
+  font-size: 18px;
+}
+.commentPreview p{
+  margin-left: 17px;
+}
+
+.postBody p{
+  color: #333 !important;
+}
+
+.postBody a{
+  color: #004AAD !important;
+  border-bottom: #004AAD solid 2px;
+}
+
+small{
+  color: rgb(148, 148, 148) !important ;
+}
+
+.searchbar{
+  margin-bottom: 10px;
+}
+
+.searchbar label{
+  color: #004AAD;
+  font-weight: bold;
+}
+.searchbar input{
+  width: 200px;
+  border: none;
+  border-bottom: solid 2px #004AAD;
+  
+}
+
